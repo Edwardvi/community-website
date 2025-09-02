@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一封特别来信 - 荒野书社</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Embedded styles for letter page specifically */
+        body {
+            background-color: #fdfaf5; /* A warm, paper-like color */
+            color: #333;
+            font-family: 'Noto Serif SC', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2em;
+        }
+        .letter-container {
+            max-width: 700px;
+            margin: 2em auto;
+            padding: 3em;
+            background: #ffffff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 4px;
+        }
+        .letter-header h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5em;
+            color: #222;
+        }
+        .letter-body p {
+            font-size: 1.1rem;
+            line-height: 2;
+            margin-bottom: 1.5em;
+        }
+        .letter-body ul {
+            list-style: none;
+            padding-left: 1.5em;
+            margin: 1.5em 0;
+        }
+        .letter-body li {
+            margin-bottom: 0.8em;
+            position: relative;
+        }
+        .letter-body li::before {
+            content: '›';
+            position: absolute;
+            left: -1.2em;
+            color: #888;
+        }
+        .letter-footer {
+            margin-top: 3em;
+            text-align: right;
+            font-style: italic;
+            color: #555;
+        }
+        .letter-body a {
+            color: var(--accent-color, #0a4835);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--accent-color, #0a4835);
+        }
+    </style>
+</head>
+<body>
+    <div class="letter-container">
+        <header class="letter-header">
+            <h1>一份来自荒野书社的特别来信</h1>
+        </header>
+        <main class="letter-body">
+            <p>嘿，荒野书社的共创者们，</p>
+            <p>还记得你之前寄给我的那些书吗？它们现在已经安放在我们的小院书架上，成为了荒野书社最珍贵的第一批馆藏。</p>
+            <p>感谢你，在一切还只是一个想法时，就给予了我最宝贵的支持。现在，我很高兴地向你宣布：我们的社区“荒野书社”正式启航了！</p>
+            <p>作为最早支持这个梦想的人，你将是我们社区永远的“创始共建者”，并拥有独一无二的终身权益。这是我们共同制定的<a href="index.html">社区公约（Playbook）</a>的初版，你可以随时查看。</p>
+            <p>你的专属终身权益如下：</p>
+            <ul>
+                <li>终身免除劳动义务：你来，就是回家。享受这里的一切就好。</li>
+                <li>永久会费豁免：你的早期支持已是最好的投资。</li>
+            </ul>
+            <p>每个之前捐书的朋友将会获得一张专属数字会员卡。它代表了我们之间最初的约定和信任。</p>
+            <p>再次感谢！期待你在小院相聚！</p>
+        </main>
+        <footer class="letter-footer">
+            <p>荒野书社 梧桐和龙飞</p>
+            <p>2025年9月1日</p>
+        </footer>
+    </div>
+</body>
+</html>
