@@ -27,3 +27,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 });
+
+    // Accordion functionality for FAQ
+    const detailsElements = document.querySelectorAll('.faq-container details');
+    if (detailsElements.length > 0) {
+        detailsElements.forEach((details) => {
+            details.addEventListener('toggle', (event) => {
+                if (details.open) {
+                    detailsElements.forEach((otherDetails) => {
+                        if (otherDetails !== details && otherDetails.open) {
+                            otherDetails.open = false;
+                        }
+                    });
+                }
+            });
+        });
+    }

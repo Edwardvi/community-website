@@ -241,3 +241,76 @@ header h1 {
 .main-nav a:hover {
     border-color: var(--primary-color);
 }
+
+
+/* FAQ Section Styles */
+.faq-section {
+    background-color: #111; /* A slightly different dark shade */
+    padding: 5em 2em;
+    color: #eee;
+}
+
+.faq-title {
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 2em;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-container details {
+    border-bottom: 1px solid #333;
+    padding: 1.5em 0;
+}
+
+.faq-container details:last-of-type {
+    border-bottom: none;
+}
+
+.faq-container summary {
+    font-size: 1.3rem;
+    font-weight: 400;
+    cursor: pointer;
+    list-style: none; /* Remove default marker */
+    position: relative;
+    padding-right: 2em; /* Space for the custom marker */
+}
+
+.faq-container summary::-webkit-details-marker {
+    display: none; /* Hide default marker for Chrome/Safari */
+}
+
+.faq-container summary::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    transition: transform 0.2s;
+}
+
+.faq-container details[open] summary::after {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.faq-content {
+    padding: 1em 0 0 0;
+    color: #ccc;
+    font-size: 1.1rem;
+    line-height: 1.9;
+}
+
+.faq-content ul {
+    list-style: none;
+    padding-left: 1em;
+}
+
+.faq-content li {
+    margin-bottom: 0.5em;
+}
